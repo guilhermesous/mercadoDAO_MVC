@@ -11,6 +11,7 @@ CREATE TABLE Produto (
 
 CREATE TABLE Venda (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    dataVenda DATE,
     quantidade INT NOT NULL,
     idProduto INT,
     FOREIGN KEY (idProduto) REFERENCES Produto(id)
